@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body align="center">
+	<script type="text/javascript" src="assets/js/funciones-calculadora.js"></script>
+	<form name="calculadora">
+		
+   	  <table  border="5" align="center">
+		<tr>
+			<td colspan="4">
+				<input type="text" onkeypress="return num(event);" Id="mostrar" />
+			 </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" Id="1" onClick="calculadora.mostrar.value += '1'"></td>
+			<td><input type="button" value="2" onClick="calculadora.mostrar.value += '2'"></td>
+			<td><input type="button" value="3" onClick="calculadora.mostrar.value += '3'"></td>
+			<td><input type="button" value="+" onClick="calculadora.mostrar.value += '+'"></td>
+		</tr>
+		 
+		<tr>
+			<td><input type="button" value="4" onClick="calculadora.mostrar.value += '4'"></td>
+			<td><input type="button" value="5" onClick="calculadora.mostrar.value += '5'"></td>
+			<td><input type="button" value="6" onClick="calculadora.mostrar.value += '6'"></td>
+			<td><input type="button" value="-" onClick="calculadora.mostrar.value += '-'"></td>
+		</tr>
+		 
+		<tr>
+			<td><input type="button" value="7" onClick="calculadora.mostrar.value += '7'"></td>
+			<td><input type="button" value="8" onClick="calculadora.mostrar.value += '8'"></td>
+			<td><input type="button" value="9" onClick="calculadora.mostrar.value += '9'"></td>
+			<td><input type="button" value="*" onClick="calculadora.mostrar.value += '*'"></td>
+		</tr>
+		 
+		<tr>
+			<td><input type="button" value="." onClick="calculadora.mostrar.value += '.'"></td>
+			<td><input type="button" value="0" onClick="calculadora.mostrar.value += '0'"></td>
+			<td><input type="button" value="=" onClick="resultado();" id="igual" name="13"
+			></td>
+			<td><input type="button" value="/ " onClick="calculadora.mostrar.value += '/'"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="√" onClick="calculadora.mostrar.value += '√'"></td>
+			<td><input type="button" value="E" onClick="calculadora.mostrar.value += '0'"></td>
+			<td><input type="button" value="=" onClick="resultado();"></td>
+			<td><input type="button" value="/ " onClick="calculadora.mostrar.value += '/'"></td>
+		</tr>
+		
+	  </table>
+	</form>
+</body>
+</html>
